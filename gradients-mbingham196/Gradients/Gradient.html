@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Gradient Project</title>
+</head>
+
+
+<style>
+  #grad1 {
+    height: 200px;
+    width: 300px;
+    background-image: linear-gradient(red, yellow);
+  }
+</style>
+
+<h1>
+  This is an example of a default linear gradient.
+  "linear-gradient(red, yellow)"
+</h1>
+<div id="grad1"></div>
+
+<style>
+  #grad2 {
+    height: 200px;
+    width: 300px;
+    background-image: linear-gradient(90deg, red, yellow);
+  }
+</style>
+
+<h1>
+  This is an example of a gradient rotated 90 degrees to the right.
+  "linear-gradient(90deg, red, yellow)"
+</h1>
+<div id="grad2"></div>
+
+<style>
+  #grad3 {
+    height: 200px;
+    width: 300px;
+    background-image: linear-gradient(45deg, red, yellow);
+  }
+</style>
+
+<h1>
+  You can also rotate Gradients to flow from one corner to another.
+  "linear-gradient(45deg, red, yellow)"
+</h1>
+<div id="grad3"></div>
+
+<style>
+  #grad4 {
+    height: 200px;
+    width: 300px;
+    background-image: linear-gradient(to top right, red, yellow);
+  }
+</style>
+
+<h1>
+  Another way to annotate this is to use the "to corner" parameters.
+  "linear-gradient(to top right, red, yellow)"
+</h1>
+<div id="grad4"></div>
+
+<style>
+  #grad5 {
+    height: 200px;
+    background-image: linear-gradient(90deg, red, orange, yellow, green, blue);
+  }
+</style>
+
+<h1>
+  This is already cool, but you can also use more than one color by listing them in the order you want them to
+  appear.
+  "linear-gradient(90deg, red, orange, yellow, green, blue)"
+</h1>
+<div id="grad5"></div>
+
+<style>
+  #grad6 {
+    height: 200px;
+    background-image: linear-gradient(90deg, red 10%, orange 20%, yellow 30%, green 40%, blue 50%);
+  }
+</style>
+
+<h1>
+  The colors also don't have to appear in even swaths. You can use percentages to define where you want the breaks
+  to be.
+  "linear-gradient(90deg, red 10%, orange 20%, yellow 30%, green 40%, blue 50%)"
+</h1>
+<div id="grad6"></div>
+
+<style>
+  #grad7 {
+    height: 600px;
+    width: 600px;
+    background-image: radial-gradient(green, blue);
+  }
+</style>
+
+<h1>
+  The next type of gradient is a Radial Gradient which is where you start with one color and then radiate that color
+  out from a point.
+  "radial-gradient(green, blue)"
+</h1>
+<div id="grad7"></div>
+
+<style>
+  #grad12 {
+    height: 600px;
+    width: 600px;
+    background-image: radial-gradient(farthest-corner at 40px 40px,
+        green 0%,
+        blue 100%);
+  }
+</style>
+
+<h1>
+  You can also specify the point of origin for the gradient. by specifying the pixels for the X and Y axis.
+  radial-gradient(farthest-corner at 40px 40px, green 0%, blue 100%);
+</h1>
+
+<div id="grad12"></div>
+
+<style>
+  #grad8 {
+    height: 600px;
+    width: 600px;
+    background-image: radial-gradient(farthest-corner at 40px 40px,
+        green 50%,
+        blue 100%);
+  }
+</style>
+
+<h1>
+  You can use the same syntax to place color stops in a radial gradient.
+  "radial-gradient(farthest-corner at 40px 40px, green 50%, blue 100%);"
+</h1>
+<div id="grad8"></div>
+
+<style>
+  #grad9 {
+    background-image: radial-gradient(green, blue),
+      url(./images/corn-meme-kid.jpg);
+  }
+</style>
+
+<h1>
+  You can also specify the shape of the gradient.
+</h1>
+<div id="grad9"></div>
+
+<style>
+  #grad10 {
+    background-image:
+      radial-gradient(red, yellow),
+      url(images/corn-meme-kid.jpg)
+  }
+</style>
+
+<div id="grad10"></div>
+
+<style>
+  #grad11 {
+    background-image: radial-gradient(circle at center, gold, rgba(0, 0, 0, 0)), url(images/corn-meme-kid.jpg);
+    width: 700px;
+    height: 674px;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+  }
+</style>
+<div id="grad11"></div>
+
+</html>
